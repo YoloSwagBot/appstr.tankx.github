@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TankX</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+    <link rel="alternate icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link type="text/css" rel="stylesheet" href="styles.css">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+</head>
+<body>
+    <script type="application/javascript">
+        // Wipe any leftover state from a previous visit/build before the game boots,
+        // so a stale local session can't desync from the server's current game state.
+        (function clearPriorSiteState() {
+            try {
+                document.cookie.split(";").forEach(function (c) {
+                    document.cookie = c.replace(/^ +/, "").replace(/=.*/, "=;expires=" + new Date(0).toUTCString() + ";path=/");
+                });
+            } catch (e) {}
+            try { localStorage.clear(); } catch (e) {}
+            try { sessionStorage.clear(); } catch (e) {}
+            try {
+                if (window.caches && caches.keys) {
+                    caches.keys().then(function (names) {
+                        names.forEach(function (name) { caches.delete(name); });
+                    });
+                }
+            } catch (e) {}
+            try {
+                if (window.indexedDB && indexedDB.databases) {
+                    indexedDB.databases().then(function (dbs) {
+                        dbs.forEach(function (db) {
+                            if (db.name) indexedDB.deleteDatabase(db.name);
+                        });
+                    });
+                }
+            } catch (e) {}
+            try {
+                if (navigator.serviceWorker && navigator.serviceWorker.getRegistrations) {
+                    navigator.serviceWorker.getRegistrations().then(function (regs) {
+                        regs.forEach(function (reg) { reg.unregister(); });
+                    });
+                }
+            } catch (e) {}
+        })();
+    </script>
+    <script type="application/javascript" src="webApp.js"></script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="100dp"
+    android:height="100dp"
+    android:viewportWidth="100"
+    android:viewportHeight="100">
+
+    <group
+        android:translateX="20.0"
+        android:translateY="7.5"
+        android:scaleX="1.25"
+        android:scaleY="1.25">
+
+        <!-- Dark outer border -->
+        <path
+            android:fillColor="#324d3f"
+            android:pathData="M14,4 H34 V60 H14 Z" />
+
+        <!-- Gold inner bar -->
+        <path
+            android:fillColor="#ecc672"
+            android:pathData="M17,7 H31 V57 H17 Z" />
+
+    </group>
+
+</vector>

@@ -1,0 +1,101 @@
+<vector xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:height="100dp"
+    android:viewportHeight="204"
+    android:viewportWidth="204"
+    android:width="100dp">
+
+    <group
+        android:translateX="15"
+        android:translateY="15"
+        android:scaleX="0.7"
+        android:scaleY="0.7">
+
+        <!-- Pommel -->
+        <path android:pathData="M102,14m-12,0a12,12 0,1 1,24 0a12,12 0,1 1,-24 0">
+            <aapt:attr name="android:fillColor">
+                <gradient
+                    android:centerX="102"
+                    android:centerY="11.6"
+                    android:gradientRadius="14.4"
+                    android:type="radial">
+                    <item android:color="#FFD49B5A" android:offset="0"/>
+                    <item android:color="#FF9C653C" android:offset="0.7"/>
+                    <item android:color="#FF5C381E" android:offset="1"/>
+                </gradient>
+            </aapt:attr>
+        </path>
+
+        <!-- Grip -->
+        <path android:pathData="M94,26L92,60L112,60L110,26Z">
+            <aapt:attr name="android:fillColor">
+                <gradient
+                    android:endX="112"
+                    android:endY="26"
+                    android:startX="92"
+                    android:startY="26"
+                    android:type="linear">
+                    <item android:color="#FF5C3B24" android:offset="0"/>
+                    <item android:color="#FFA66D3B" android:offset="0.3"/>
+                    <item android:color="#FFC88E52" android:offset="0.5"/>
+                    <item android:color="#FFA66D3B" android:offset="0.7"/>
+                    <item android:color="#FF5C3B24" android:offset="1"/>
+                </gradient>
+            </aapt:attr>
+        </path>
+
+        <!-- Grip Wraps -->
+        <path android:fillAlpha="0.35" android:fillColor="#3b2010" android:pathData="M94,32L110,32A1,1 0,0 1,111 33L111,33.5A1,1 0,0 1,110 34.5L94,34.5A1,1 0,0 1,93 33.5L93,33A1,1 0,0 1,94 32z" android:strokeAlpha="0.35"/>
+        <path android:fillAlpha="0.35" android:fillColor="#3b2010" android:pathData="M94,40L110,40A1,1 0,0 1,111 41L111,41.5A1,1 0,0 1,110 42.5L94,42.5A1,1 0,0 1,93 41.5L93,41A1,1 0,0 1,94 40z" android:strokeAlpha="0.35"/>
+        <path android:fillAlpha="0.35" android:fillColor="#3b2010" android:pathData="M94,48L110,48A1,1 0,0 1,111 49L111,49.5A1,1 0,0 1,110 50.5L94,50.5A1,1 0,0 1,93 49.5L93,49A1,1 0,0 1,94 48z" android:strokeAlpha="0.35"/>
+
+        <!-- Crossguard -->
+        <path android:pathData="M74,60L74,72L130,72L130,60L122,58L82,58Z">
+            <aapt:attr name="android:fillColor">
+                <gradient
+                    android:endX="74"
+                    android:endY="72"
+                    android:startX="74"
+                    android:startY="58"
+                    android:type="linear">
+                    <item android:color="#FF8C5F3E" android:offset="0"/>
+                    <item android:color="#FFC88E52" android:offset="0.4"/>
+                    <item android:color="#FF5C3B24" android:offset="1"/>
+                </gradient>
+            </aapt:attr>
+        </path>
+
+        <path android:fillAlpha="0.6" android:fillColor="#A66D3B" android:pathData="M76,60L82,56L122,56L128,60Z" android:strokeAlpha="0.6"/>
+
+        <!-- Blade with Warm Metallic and Rust Tones -->
+        <path android:pathData="M82,72L81,88L84,92L80,106L83,110L79,126L82,131L80,146L83,152L81,166L85,173L102,203L119,173L123,166L121,152L124,146L122,131L125,126L121,110L124,106L120,92L123,88L122,72Z">
+            <aapt:attr name="android:fillColor">
+                <gradient
+                    android:endX="125"
+                    android:endY="72"
+                    android:startX="79"
+                    android:startY="72"
+                    android:type="linear">
+                    <item android:color="#FF704322" android:offset="0"/>
+                    <item android:color="#FFC87033" android:offset="0.25"/>
+                    <item android:color="#FFE8A058" android:offset="0.5"/>
+                    <item android:color="#FFC87033" android:offset="0.75"/>
+                    <item android:color="#FF704322" android:offset="1"/>
+                </gradient>
+            </aapt:attr>
+        </path>
+
+        <!-- Fuller/Fuller Line Shadow -->
+        <path android:fillAlpha="0.7" android:fillColor="#522C12" android:pathData="M98,80L98,163Q102,178 106,163L106,80Z" android:strokeAlpha="0.7"/>
+
+        <!-- Rust Pitting Details -->
+        <path android:fillAlpha="0.7" android:fillColor="#522C12" android:pathData="M86,98m-1.6,0a1.6,1.6 0,1 1,3.2 0a1.6,1.6 0,1 1,-3.2 0" android:strokeAlpha="0.7"/>
+        <path android:fillAlpha="0.65" android:fillColor="#522C12" android:pathData="M85,133m-1.4,0a1.4,1.4 0,1 1,2.8 0a1.4,1.4 0,1 1,-2.8 0" android:strokeAlpha="0.65"/>
+        <path android:fillAlpha="0.7" android:fillColor="#522C12" android:pathData="M87,156m-1.5,0a1.5,1.5 0,1 1,3 0a1.5,1.5 0,1 1,-3 0" android:strokeAlpha="0.7"/>
+        <path android:fillAlpha="0.65" android:fillColor="#522C12" android:pathData="M118,103m-1.5,0a1.5,1.5 0,1 1,3 0a1.5,1.5 0,1 1,-3 0" android:strokeAlpha="0.65"/>
+        <path android:fillAlpha="0.7" android:fillColor="#522C12" android:pathData="M119,138m-1.7,0a1.7,1.7 0,1 1,3.4 0a1.7,1.7 0,1 1,-3.4 0" android:strokeAlpha="0.7"/>
+        <path android:fillAlpha="0.6" android:fillColor="#522C12" android:pathData="M117,160m-1.3,0a1.3,1.3 0,1 1,2.6 0a1.3,1.3 0,1 1,-2.6 0" android:strokeAlpha="0.6"/>
+
+    </group>
+
+</vector>
